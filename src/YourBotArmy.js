@@ -7,7 +7,7 @@ function YourBotArmy() {
     function enlistBot(bot) {
       if (!enlistedBots.includes(bot)) {
         setEnlistedBots([...enlistedBots, bot]);
-      }
+      } 
     }
   
     return (

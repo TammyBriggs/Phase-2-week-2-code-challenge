@@ -11,8 +11,15 @@ function YourBotArmy() {
     }
 
     function releaseBot(bot) {
-        const newEnlistedBots = enlistedBots.filter(b => b.id !== bot.id);
-        setEnlistedBots(newEnlistedBots);
+        fetch(`http://localhost:8001/bots/${bot.id}`, {
+             method: 'DELETE',
+        })
+        .then(response => {
+                const newEnlistedBots = enlistedBots.filter(b => b.id !== bot.id);
+                setEnlistedBots(newEnlistedBots);
+            }
+        )
+        .catch(error => console.log(error));
     }
   
     return (
@@ -29,6 +36,7 @@ function YourBotArmy() {
                 <p>Armor: {bot.armor}</p>
                 <p>Class: {bot.bot_class}</p>
                 <p>Catchphrase: {bot.catchphrase}</p>
+                <button className="delete-button" onClick={() => releaseBot(bot)}>X</button>
               </div>
             </div>
           ))}

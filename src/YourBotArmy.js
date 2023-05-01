@@ -9,13 +9,18 @@ function YourBotArmy() {
         setEnlistedBots([...enlistedBots, bot]);
       } 
     }
+
+    function releaseBot(bot) {
+        const newEnlistedBots = enlistedBots.filter(b => b.id !== bot.id);
+        setEnlistedBots(newEnlistedBots);
+    }
   
     return (
       <div>
         <h1>Your Bot Army</h1>
         <div className="card-container">
           {enlistedBots.map(bot => (
-            <div key={bot.id} className="card">
+            <div key={bot.id} className="card" onClick={() => releaseBot(bot)}>
               <img src={bot.avatar_url} alt={bot.name} />
               <div className="card-content">
                 <h2>{bot.name}</h2>

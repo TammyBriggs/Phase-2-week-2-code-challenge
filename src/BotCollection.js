@@ -4,7 +4,7 @@ function BotCollection(props) {
   const [bots, setBots] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8001/bots')
+    fetch('https://my-json-server.typicode.com/TammyBriggs/Phase-2-week-2-code-challenge/bots')
       .then(response => response.json())
       .then(data => setBots(data))
       .catch(error => console.log(error));

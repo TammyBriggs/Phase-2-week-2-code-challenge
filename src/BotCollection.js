@@ -4,7 +4,7 @@ function BotCollection(props) {
   const [bots, setBots] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8001/bots')
+    fetch('https://glitch.com/edit/#!/congruous-sophisticated-tablecloth?path=db.json%3A1%3A0')
       .then(response => response.json())
       .then(data => setBots(data))
       .catch(error => console.log(error));

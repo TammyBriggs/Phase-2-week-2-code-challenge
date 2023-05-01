@@ -12,7 +12,7 @@ function YourBotArmy() {
 
     function releaseBot(bot) {
         fetch(`http://localhost:8001/bots/${bot.id}`, {
-             method: 'DELETE',
+             method: 'DELETE',   
         })
         .then(response => {
                 const newEnlistedBots = enlistedBots.filter(b => b.id !== bot.id);

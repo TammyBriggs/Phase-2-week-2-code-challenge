@@ -1,4 +1,4 @@
-# Bank of Flatiron
+# Bot Battlr
 #### A React application that displays a list of bots for a user to make an army out of, 01/05/2023
 
 #### By **Tamunotonye Briggs**

@@ -7,7 +7,7 @@
 This is a react application that displays a list or bots under a Bot Collection div. This bots can be selected and used to build an army. Once a bot is clicked on, it is added under the "Your Bot Army" div. If a user wants to release/remove a bot, he/she can click on the red x button at the bottom of the card to permanently remove the bot (even from the Bot Collection). 
 
 ## Setup/Installation Requirements
-* To view the web app, visit: https://phase-2-week-2-code-challenge-lac.vercel.app/
+* To view the web app, visit: https://phase-2-week-2-code-challenge-three.vercel.app/
 
 ## Known Bugs
 After deleting a Bot from your army, the page needs to refreshed before it is permanetly deleted from the Bot collection.

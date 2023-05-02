@@ -11,7 +11,7 @@ function YourBotArmy() {
     }
 
     function releaseBot(bot) {
-        fetch(`http://localhost:8001/bots/${bot.id}`, {
+        fetch(`https://bots-database.onrender.com/bots/${bot.id}`, {
              method: 'DELETE',   
         })
         .then(response => {
